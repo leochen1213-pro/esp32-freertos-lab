@@ -1,0 +1,15 @@
+[low ] tick 1505, highCount 0
+[low ] tick 2005, highCount 0
+[low ] tick 2505, highCount 0
+[low ] tick 3005, highCount 0
+[low ] tick 3505, highCount 0
+[low ] tick 4005, highCount 0
+[high] entering busy loop, never blocking
+[low ] tick 4505, highCount 1
+[low ] tick 5005, highCount 501
+[low ] tick 5505, highCount 1001
+[low ] tick 6005, highCount 1501
+[low ] tick 6505, highCount 2001
+[low ] tick 7005, highCount 2501
+[low ] tick 7505, highCount 3001
+[low ] tick 8005, highCount 3501

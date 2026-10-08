@@ -1,0 +1,25 @@
+[low ] core 0, tick 1505
+[low ] core 0, tick 2005
+[low ] core 0, tick 2505
+[low ] core 0, tick 3005
+[low ] core 0, tick 3505
+[low ] core 0, tick 4005
+[high] entering busy loop, never blocking
+E (19092) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (19092) task_wdt:  - IDLE0 (CPU 0)
+E (19092) task_wdt: Tasks currently running:
+E (19092) task_wdt: CPU 0: high
+E (19092) task_wdt: CPU 1: IDLE1
+E (19092) task_wdt: Aborting.
+E (19092) task_wdt: Print CPU 0 (current core) backtrace
+
+Backtrace: 0x42001af1:0x3fcee790 0x4037ad3d:0x3fcee7b0
+
+ELF file SHA256: ecc17ffba
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x28 (SPI_FAST_FLASH_BOOT)
+...
+(same sequence repeats: boot loop)

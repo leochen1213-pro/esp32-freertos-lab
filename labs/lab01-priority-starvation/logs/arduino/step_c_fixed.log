@@ -1,0 +1,11 @@
+[low ] core 0, tick 1505
+[low ] core 0, tick 2005
+[low ] core 0, tick 2505
+[low ] core 0, tick 3005
+[low ] core 0, tick 3505
+[low ] core 0, tick 4005
+[high] entering busy loop, never blocking
+[low ] core 0, tick 4505
+[low ] core 0, tick 5005
+[low ] core 0, tick 5505
+[low ] core 0, tick 6005

@@ -1,0 +1,8 @@
+[low ] core 1, tick 1505
+[low ] core 1, tick 2005
+[low ] core 1, tick 2505
+[low ] core 1, tick 3005
+[low ] core 1, tick 3505
+[low ] core 1, tick 4005
+[high] entering busy loop, never blocking
+(no further output, no error)

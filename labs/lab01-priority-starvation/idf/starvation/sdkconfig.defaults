@@ -1,0 +1,3 @@
+# Lab 01 keeps IDF's default tick rate (100 Hz) on purpose,
+# to reproduce logs/idf/step_a_core1_watchdog.log.
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y

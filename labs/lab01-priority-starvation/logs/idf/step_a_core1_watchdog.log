@@ -1,0 +1,24 @@
+app_main on core 0, tick rate 100 Hz
+[low ] core 1, tick 2
+I (274) main_task: Returned from app_main()
+[low ] core 1, tick 52
+[low ] core 1, tick 102
+[low ] core 1, tick 152
+[low ] core 1, tick 202
+[low ] core 1, tick 252
+[high] entering busy loop, never blocking
+E (8264) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (8264) task_wdt:  - IDLE1 (CPU 1)
+E (8264) task_wdt: Tasks currently running:
+E (8264) task_wdt: CPU 0: IDLE0
+E (8264) task_wdt: CPU 1: high
+E (8264) task_wdt: Print CPU 1 backtrace
+
+Backtrace: 0x4037756A:0x3FC91A60 0x40376E3D:0x3FC91A80 0x4200925C:0x3FCEB930 0x4200ECA6:0x3FCEB950
+--- 0x4037756a: esp_crosscore_isr at .../esp-idf/components/esp_system/crosscore_int.c:74
+--- 0x40376e3d: _xt_lowint1 at .../esp-idf/components/xtensa/xtensa_vectors.S:1264
+--- 0x4200925c: high_task at .../main/main.c:25
+--- 0x4200eca6: vPortTaskWrapper at .../esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:147
+
+E (13264) task_wdt: Task watchdog got triggered. ...
+(repeats every 5 s, no reboot)
